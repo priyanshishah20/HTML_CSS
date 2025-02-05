@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        button{
+            border: none;
+            padding: 0.5rem 0.8rem;
+            margin: 0.2rem;
+            border-radius: 2px;
+            cursor: pointer;
+            color: #fff;
+            background: #909090;
+        }
+        .btn1{
+            background-color: red;
+        }
+        .btn1:hover{
+            background-color: darkred;
+        }
+        .btn1:active{
+            background-color: green;
+        }
+        .btn2{
+            color: #2c61af;
+            background-color: transparent;
+            border: 1px solid #2c61af;
+            transition: background-color 0.15s, color 0.15s;
+        }
+        .btn2:hover{
+            background-color: #2c61af;
+            color: #fff;
+
+        }
+        .btn3{
+            background-color: #2c61af;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: box-shadow 0.3s;
+        }
+        .btn3:hover{
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .btn4{
+            background-color: #000;
+        }
+        .btn5{
+            background: rgb(121, 82, 179);
+        }
+        .btn6{
+            color: rgb(108, 117, 125);
+            background-color: transparent;
+            border: 1px solid rgb(108, 117, 125);
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .btn6:hover{
+            background-color: rgb(108, 117, 125);
+            color: #fff;
+        }
+        .green-btn{
+            background-color: green;
+        }
+        .stretch{
+            transition: padding 0.2s;
+        }
+        .stretch:hover{
+            padding: 1rem 3rem;
+        }
+        .shadow{
+            transition: box-shadow 0.2s;
+        }
+        .shadow:hover{
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+        .shadow:active{
+            box-shadow: none;
+        }
+        .nums{
+            margin-inline: 0.5rem;
+            transition: padding 0.15s, margin 0.15s;
+        }
+        .nums:hover{
+            padding-inline: 2rem;
+            margin-inline: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <button class="btn1">SUBSCRIBE</button>
+    <button class="btn2">JOIN</button>
+    <button class="btn3">Tweet</button>
+
+    <div>
+        <button class="btn4">Request Now</button>
+        <button class="btn5">Get Started</button>
+        <button class="btn6">Download</button>
+    </div>
+
+    <div>
+        <p>Transition, Hover and Opacity</p>
+        <button>Back</button>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <button>Next</button>
+    </div>
+    <button class="green-btn stretch">Stretch</button>
+    <button class="green-btn shadow">Shadow</button>
+    <button class="green-btn nums">One</button>
+    <button class="green-btn nums">Two</button>
+    <button class="green-btn nums">Three</button>
+</body>
+</html>
